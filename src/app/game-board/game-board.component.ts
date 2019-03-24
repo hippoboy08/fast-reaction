@@ -57,7 +57,7 @@ export class GameBoardComponent implements OnInit {
     }
     if (this.gameStart === false) {
       this.gameStart = true;
-      console.log(this.startTime);
+      // console.log(this.startTime);
       this.play();
     } else {
       // prevents clicks before background is changed
@@ -70,7 +70,7 @@ export class GameBoardComponent implements OnInit {
   stop() {
     this.gameStart = false;
     this.endTime = Date.now() - this.startTime;
-    console.log('Total time:', this.endTime);
+    // console.log('Total time:', this.endTime);
     this.gameEnd = true;
   }
 
@@ -88,6 +88,7 @@ export class GameBoardComponent implements OnInit {
   /* Generate random color code*/
   randomColorCode() {
     const newCode = '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+    this.colorCode = newCode;
   }
 
   play() {
