@@ -1,0 +1,10 @@
+<div [@gameState]="{value: state, params: {color: colorCode}}" class="game-board" (click)="start()">
+  {{ showingText }}
+  <div [@resultState]="resultState" class="game-result">
+    <h1>Your time</h1>
+    <h2> {{ endTime }}ms </h2>
+    <button (click)="reset()">Restart</button>
+  </div>
+</div>
+
+

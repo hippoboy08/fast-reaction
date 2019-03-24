@@ -1,0 +1,22 @@
+
+* {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.game-board {
+  user-select: none;
+  color: white;
+  width: 100%;
+  height: 50vh;
+}
+
+.game-result {
+  position: absolute;
+  left: -100px;
+  color: black;
+  margin: auto;
+  width: 100%;
+  // height: 30vh;
+}
